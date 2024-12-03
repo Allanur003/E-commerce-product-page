@@ -1,0 +1,212 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+:root{
+--Orange: hsl(26, 100%, 55%);
+--Pale-orange: hsl(25, 100%, 94%);
+--Very-dark-blue: hsl(220, 13%, 13%);
+--Dark-grayish-blue: hsl(219, 9%, 45%);
+--Grayish-blue: hsl(220, 14%, 75%);
+--Light-grayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--paragraph: 16px
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    overflow: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+.headM{
+    transform: translateY(20px);
+    width: 100%;
+    height:5%;
+    display: flex;
+}
+.leftHead{
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    height: 50%;
+    width:100%;
+    background-color: white;
+}
+.rightHead{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(31vw);
+}
+.icon>img{
+  height: 40px;
+  width: 40px; 
+  }
+.gaps{
+    color: gray;
+    transform: translateX(-30px);
+    padding-left: 30px;
+    font-size: 13px;
+}
+.gaps:hover{text-decoration:underline; text-decoration-color: orangered; text-decoration-thickness: 3px; padding-top: 10px; font-size: 20px };
+
+.linea{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+main{
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items:center ;
+    
+}
+.sneakers{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.mainRow{
+    display: flex;
+    gap: 100px;
+}
+nav{
+    background-color: gray;
+   height: 0.1vh;
+   width: 80vw;
+}
+
+.mainImage, .text{
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .bigText{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .price{
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .price>span{
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: black;
+           padding: 5px;
+        color: white;
+    }
+    .adds{
+        gap: 10px;
+        display: flex;
+        width: 100%;
+        height: 7vh;
+    }
+    .leftadd, .rightadd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-weight: bold;
+        height: 100%;
+    }
+    .leftadd{
+        gap: 35%;
+        font-size: 20px;
+        width: 40%;
+        background-color:var(--Light-grayish-blue);
+    }
+    .rightadd{
+        font-size: 13px;
+        gap: 10px;
+        width: 60%;
+        background-color: var(--Orange);
+    }
+    .rightadd>img{
+        width: 15px;
+        height: 15px;
+    }
+    .centertext{
+        font-size: 14px;
+        color: gray;
+        line-height: 1.5;
+    }
+}
+
+
+.mainImages>img{
+    border-radius: 20px;
+ image-rendering: optimizeQuality;
+ height: 100%;
+ width: 100%;
+}
+
+.selects{
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    gap: 35px;
+}
+.select>img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+ @media(max-width:768px){
+    body{width: 100vw;height: 100vh;display: flex;flex-direction: column;overflow-x: hidden;}
+    main{height: 100%;width:100%;gap:30px}
+    hr{display: none;}
+    .headM{transform: translateY(0px);align-items: center;}
+    .mainRow{width: 100%;height: 40%;flex-direction: column;}
+    .mainImage{border-radius: 0px;width: 100%;height: 80%;}
+    .mainImages>img{border-radius: 0px;width: 100%;height: 90%;}
+    .rightHead{gap: 0}
+    .gaps{display: none;}
+    .selects{display: none;}
+    .text{padding: 20px;width: 100%;gap: 20px;
+    .bigText{font-size: 25px;}
+    .centertext{line-height: 1.5;font-size: 15px;}
+    .adds{width: 100%;height: 15vh;display: flex;flex-direction: column;}
+     .leftadd{width: 100%;}
+     .rightadd{width: 100%;}}}
+
+@media(max-width:415px){
+    main{width: 100%;}
+  .mainImages>img{ object-fit: cover;}
+ .text{.bigText{font-size: 30px;}}
+
+}     
+

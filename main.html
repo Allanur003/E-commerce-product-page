@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+    <img src="images/icon-menu.svg" alt="menu.img" id="openMenu">
+    <span>sneakers</span>
+    <div>Collections</div>
+    <div>Men</div>
+    <div>Women</div>
+    <div>About</div>
+    <div>Contact</div>
+    <nav>
+    <img class="cardImg" src="images/icon-cart.svg" alt="cart.svg">
+    <img src="images/image-avatar.png" alt="avatar.png">
+</nav>   
+</header>
+<hr>
+
+
+<!-- For mobile phone menu button -->
+<div id="menu">
+    <nav class="menuLeft">
+    <img src="images/icon-close.svg" alt="close.svg" id="closeMenu">
+    <p>Collections</p>
+    <p>Men</p>
+    <p>Women</p>
+    <p>About</p>
+    <p>Contact  </p>
+    </nav>
+    <nav class="menuRight"></nav>
+</div>
+
+
+
+<main>
+<section class="leftSection">
+<img src="images/image-product-1.jpg" alt="product-1" class="mainImage" id="openMenuImg">
+
+<nav>
+<img src="images/image-product-1-thumbnail.jpg" alt="product 1">
+<img src="images/image-product-2-thumbnail.jpg" alt="product 1">
+<img src="images/image-product-3-thumbnail.jpg" alt="product 1">
+<img src="images/image-product-4-thumbnail.jpg" alt="product 1">
+</nav>
+</section>
+
+<!-- For card -->
+
+<section class="rightSection">
+    <small id="card">
+        <p>Cart</p>
+        <nav></nav>
+        <section>          
+         <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail.jpg" style="border-radius: 5px;"> 
+         <span>
+            <p>Fall Limited Edition Sneakers</p>
+            <div>125.00$ x <b id="xc">0</b> <b style="font-weight: bold;  color: black;" id="result">$</b> </div>
+         </span>   
+         <img src="images/icon-delete.svg" alt="delete.svg" class="deleteImg">           
+        </section>
+        <div class="checkOut">Checkout</div>
+    </small>
+<div class="right1">Sneaker Company</div>
+<div class="right2">Full Limited Edition Sneakers</div>
+<div class="right3">These low-profile sneakers are you perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</div>
+<div class="prices">
+<div class="right4">$125.00 <span>50%</span></div>
+<div class="right5" style="color: gray; text-decoration:line-through;">$250.00</div>
+</div>
+<div class="right6">
+<small class="leftSmall"><span id="decrement">-</span><span style="color: black;" id="numB">0</span><span id="increment">+</span></small>
+<small class="rightSmall" id="calculate"><span><img src="images/icon-cart.svg" alt=""></span>Add to cart</small>
+</div>
+</section>
+</main>
+
+
+<!-- For menu Image Lightbox -->
+
+<div class="mainImg acer" id="x">
+<main>
+    <img src="images/icon-close.svg" alt="close.png" id="closeMenuImg">
+<div class="firstMain">
+    <div class="mySlides">
+    <img src="images/image-product-1.jpg" alt="product 1" style="border-radius: 10px;" class="lightBoxImg">
+    </div>
+
+    <div class="mySlides">
+    <img src="images/image-product-2.jpg" alt="product 2" style="border-radius: 10px;" class="lightBoxImg">
+    </div>
+
+    <div class="mySlides">
+    <img src="images/image-product-3.jpg" alt="product 3" style="border-radius: 10px;" class="lightBoxImg">
+    </div>
+
+    <div class="mySlides">
+    <img src="images/image-product-4.jpg" alt="product 4" style="border-radius: 10px;" class="lightBoxImg">
+    </div>
+
+    <nav>
+        <button style="border-style: hidden;" onclick="plusImg(-1)"><img src="images/icon-previous.svg" alt="previous" class="prev"></button>
+        <button style="border-style: hidden;" onclick="plusImg(1)"><img src="images/icon-next.svg" alt="next" class="next"></button>
+    </nav>
+</div>
+<div class="secondMain">
+    <div>
+<img src="images/image-product-1-thumbnail.jpg" alt="product 1" class="thumbnail">
+<img src="images/image-product-2-thumbnail.jpg" alt="product 1" class="thumbnail">
+<img src="images/image-product-3-thumbnail.jpg" alt="product 1" class="thumbnail">
+<img src="images/image-product-4-thumbnail.jpg" alt="product 1" class="thumbnail">
+</div>
+</div>
+</main>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
